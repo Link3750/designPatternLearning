@@ -1,0 +1,33 @@
+@startuml
+together {
+interface HandlerAdapter
+class SimpleHandlerAdapter
+class HttpHandlerAdapter
+class AnnotationHandlerAdapter
+}
+
+together {
+interface Controller
+class HttpController
+class SimplerController
+class AnnotationController
+}
+
+class DispatchServlet
+
+Controller <|-- HttpController
+Controller <|-- SimplerController
+Controller <|-- AnnotationController
+
+HandlerAdapter <|-- SimpleHandlerAdapter
+HandlerAdapter <|-- HttpHandlerAdapter
+HandlerAdapter <|-- AnnotationHandlerAdapter
+
+DispatchServlet o-- HandlerAdapter
+DispatchServlet : doDispatcher(): void
+Controller <.. DispatchServlet
+SimpleHandlerAdapter ..> SimplerController
+HttpHandlerAdapter ..> HttpController
+AnnotationHandlerAdapter ..> AnnotationController
+
+@enduml
