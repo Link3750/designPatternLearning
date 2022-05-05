@@ -18,6 +18,7 @@ public class DispatcherServlet {
     public static List<HandlerAdapter> handlerAdapters = new ArrayList<>();
 
     public DispatcherServlet() {
+        // 将所有的适配器装入集合中，便于后续遍历
         handlerAdapters.add(new AnnotationHandlerAdapter());
         handlerAdapters.add(new HttpHandlerAdapter());
         handlerAdapters.add(new SimpleHandlerAdapter());
