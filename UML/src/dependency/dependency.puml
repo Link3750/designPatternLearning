@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+class PersonServiceBean {
+    PersonDao personDao;
+    save(person:Person): void
+    getIdCard(personId: Integer): Integer
+    modify():void
+}
+class IDCard
+class Person
+class PersonDao
+class Department
+
+IDCard <.. PersonServiceBean
+Person <.. PersonServiceBean
+PersonDao <.. PersonServiceBean
+Department <.. PersonServiceBean
+
+@enduml
