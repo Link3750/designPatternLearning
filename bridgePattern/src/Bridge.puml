@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+together {
+    class Client
+
+    abstract Abstraction {
+        - pImp:Implementor*
+        + operation() : void
+        + Abstraction（Implementor*):void
+        <constructor>
+    }
+
+    class RefineAbstraction extends Abstraction{
+        + operation() :void
+        <constructor>
+        + RefinedAbstraction(Implementor*)()
+    }
+}
+
+Implementor <--o Abstraction
+Client ..> Abstraction
+
+
+
+
+together {
+    Interface Implementor {
+        operationImp():void
+    }
+
+    class ConcreteImplementorA implements Implementor{
+        operationImp():void
+    }
+
+    class ConcreteImplementorB implements Implementor{
+        operationImp():void
+    }
+}
+
+
+
+@enduml
