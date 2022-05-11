@@ -1,3 +1,5 @@
+package atguigu.bridge;
+
 /**
  * @author TanYuan
  * @date 2022年05月10日 21:38
