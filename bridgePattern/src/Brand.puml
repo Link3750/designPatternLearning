@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+together {
+interface Brand {
+    call():void
+}
+
+class Vivo implements Brand
+class XiaoMi implements Brand
+}
+
+class Phone {
+ - brand:Brand
+}
+
+together {
+Brand --o Phone
+
+class FoldedPhone extends Phone
+class UpRightPhone extends Phone
+}
+
+class Client
+
+Client ..> Phone
+Client ..> Brand
+
+@enduml
