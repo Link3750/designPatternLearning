@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/UML/UML.iml" filepath="$PROJECT_DIR$/UML/UML.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bridgePattern/bridgePattern.iml" filepath="$PROJECT_DIR$/bridgePattern/bridgePattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/designPattern.iml" filepath="$PROJECT_DIR$/designPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/designPatternDemo/designPatternDemo.iml" filepath="$PROJECT_DIR$/designPatternDemo/designPatternDemo.iml" />
     </modules>

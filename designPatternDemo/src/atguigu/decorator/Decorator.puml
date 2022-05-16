@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+abstract Component {
+    methodA()
+    methodB()
+}
+
+class Decorator extends Component {
+    Component Obj
+    methodA();
+    methodB();
+}
+
+class ConcreteComponent extends Component, Decorator {
+    methodA();
+    methodB();
+}
+
+@enduml

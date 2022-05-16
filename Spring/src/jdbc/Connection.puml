@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+interface java.sql.Connection
+interface com.mysql.jdbc.Connection implements java.sql.Connection
+interface MySqlConnection implements com.mysql.jdbc.Connection
+
+class ConnectionImpl implements MySqlConnection
+
+@enduml
